@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Karla:wght@400;500;800&family=Montserrat:wght@400;500;700;800;900&family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>MeShop</title>
+</head>
+<body>
+    <!--PURCHASE-->
+    <div id="purchase" class="purchase">
+        <img class="purchase-img" src="images/background-purchase.png">
+        <div class="purchase-content">
+            <p>International Shipping with 75$ Purchase</p>
+            <button id="close-purchase"><img src="images/x.png"></button>
+        </div>
+    </div>
+
+    <!--SIDEBAR-->
+        <div class="sidebar" id="sidebar">
+            <i class="fa fa-times" aria-hidden="true" id="sidebar-close-btn"></i>
+            <div class="sidebar-links">
+                <ul>
+                    <li><a href="#">Quick Link 1</a></li>
+                    <li><a href="#">Quick Link 2</a></li>
+                    <li><a href="#">Quick Link 3</a></li>
+                    <li><a href="#">Quick Link 4</a></li>
+                    <li><a href="#">Quick Link 5</a></li>
+                    <li><a href="#">Quick Link 6</a></li>
+                </ul>
+            </div>
+        </div>
+
+    <header>
+        <div class="navigation" data-aos="fade-in" data-aos-anchor="#example-anchor" data-aos-offset="0" data-aos-duration="500">
+            <!--UPPER NAVIGATION-->
+            <div class="navigation-up">
+                <div class="navigation-greetings">
+                    <p class="hello">Hello guys! Welcome to MeShop</p>
+                    <p>email: <a href="https://www.gmail.com" target="_blank">free@psdfreebies.com</a></p>
+                </div>
+                <div class="navigation-value">
+                    <p id="en-btn">EN</p>
+                    <p id="usd-btn">USD</p>
+                </div>
+            </div>
+            <!--LOWER NAVIGATION-->
+            <div class="navigation-down">
+                <div class="logo">
+                    <h1><a href="#">MeStore</a></h1>
+                </div>
+                <div class="nav">
+                    <!--NAV LINKS-->
+                    <div class="nav-links">
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#shop">Shop</a></li>
+                            <li><a href="#product">Product</a></li>
+                            <li><a href="#news">Blog</a></li>
+                            <li><a href="#logos">Portfolio</a></li>
+                            <li><a href="#">Page</a></li>
+                        </ul>
+                    </div>
+                    <!--NAV ICONS-->
+                    <div class="nav-icons">
+                        <label>
+                            <input id="search-check" type="checkbox" type="submit" form="searchForm" />
+                            <div class="search" id="search-btn"><?xml version="1.0" encoding="utf-8"?>
+                                <i class="fa fa-search"></i>
+                            </div>
+                        </label>
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                        <label>
+                            <input id="search-check" type="checkbox" type="submit" form="searchForm" />
+                            <div class="search" id="sidebar-open-btn"><?xml version="1.0" encoding="utf-8"?>
+                                <i class="fad fa fa-bars"></i>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--SEARCH INPUT-->
+        <div class="nav-search" id="search-input">
+            <form id="searchForm" action="/action_page.php">
+                <input class="search-box" type="search" id="search-input" placeholder="   Search.." name="gsearch" onfocus="this.value=''">
+            </form>
+        </div>
+    </header>
+
+    <!--HOME PAGE-->
+    <div class="home" id="home">
+        <div class="home-text" data-aos="fade-up" data-aos-anchor="#example-anchor" data-aos-offset="0" data-aos-duration="800">
+            <h1>FASHION <br><span>CARNIVAL</span></h1>
+            <div class="home-year">
+                <h4>2022</h4>
+            </div>
+            <p>Lorem Ipsum. Proin gravida nibh velit it’s a cold world out there. This is Photoshop's version of Lorem Ipsum. Proin gravida nibh velit it’s a cold world out there.</p>
+            <button>Shop Now</button>
+        </div>
+        <div class="home-img" data-aos="fade-in" data-aos-anchor="#example-anchor" data-aos-offset="0" data-aos-duration="500">
+            <img src="images/home-lady.png">
+        </div>
+    </div>
+
+    <!--SHOP-->
+    <div id="shop" class="shop">
+        <div class="shop-content">
+            <div class="shop-icons">
+
+                <div class="plane">
+                    <i class="fa fa-plane"></i>
+                </div>
+                <div class="clock">
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                </div>
+                <div class="support">
+                    <i class="fa fa-life-ring"></i>
+                </div>
+            </div>
+
+            <div class="shop-title">
+                <div class="shipping">
+                    <h1>Free Shipping</h1>
+                    <p>With €50 or more orders</p>
+                </div>
+                <div class="refund">
+                    <h1>Free Refund</h1>
+                    <p>100% Refund Within 3 days</p>
+                </div>
+                <div class="support-title">
+                    <h1>Support 24.7</h1>
+                    <p>Call us anytime you want</p>
+                </div>
+            </div>
+
+            <div class="shop-now" data-aos="fade-up" data-aos-anchor="#example-anchor" data-aos-offset="1300" data-aos-duration="800">
+                <div class="shop-left">
+                    <div class="shop-left-text">
+                        <h2>Fashion <span>Carnival</span></h2>
+                        <p>Lorem Ipsum. Proin gravida nibh velit it's a cold world</p>
+                        <button>Shop Now</button>
+                    </div>
+                    <div class="shop-left-img">
+                        <img src="images/rock-girl.png">
+                    </div>
+                </div>
+                <div class="shop-right">
+                    <div class="shop-right-text">
+                        <h2>Fashion <span>Carnival</span></h2>
+                        <p>Lorem Ipsum. Proin gravida nibh velit it's a cold world</p>
+                        <button>Shop Now</button>
+                    </div>
+                    <div class="shop-right-img">
+                        <img src="images/beared-man.png">
+                    </div>
+                </div>
+            </div>
+
+            <div id="product" class="featured-products">
+                <div class="featured-produts-title">
+                    <h3>FEATURED PRODUCTS</h3>
+                    <p>Praesent mauris. Fusce nec tellus sed augue semper porta.</p>
+                </div>
+                <div class="slider">
+                    <!-- Swiper -->
+                    <div class="swiper mySwiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="1900" data-aos-duration="900">
+                            <img src="images/slider-img1.png">
+                            <h4>Orange T-shirt</h4>
+                            <p>Nike</p>
+                            <div class="stars">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+                            <div class="price-slider">
+                                <p class="old-price"></p>
+                                <p class="new-price"></p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="1900" data-aos-duration="1000">
+                            <img src="images/slider-img2.png">
+                            <h4>Orange T-shirt</h4>
+                            <p>Nike</p>
+                            <div class="stars">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+                            <div class="price-slider">
+                                <p class="old-price"></p>
+                                <p class="new-price"></p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="1900" data-aos-duration="1100">
+                            <img src="images/slider-img3.png">
+                            <h4>Orange T-shirt</h4>
+                            <p>Nike</p>
+                            <div class="stars">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+                            <div class="price-slider">
+                                <p class="old-price"></p>
+                                <p class="new-price"></p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="1900" data-aos-duration="1200">
+                            <img src="images/slider-img4.png">
+                            <h4>Orange T-shirt</h4>
+                            <p>Nike</p>
+                            <div class="stars">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+                            <div class="price-slider">
+                                <p class="old-price"></p>
+                                <p class="new-price"></p>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="shop-slider-buttons">
+                    <button class="prev"><i class="fa fa-caret-left"></i></button>
+                    <button class="next"><i class="fa fa-caret-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--LATEST NEWS-->
+    <div id="news" class="news">
+        <div class="news-title">
+            <h4>Latest News</h4>
+            <p>Praesent mauris. Fusce nec tellus sed augue semper porta.</p>
+        </div>
+
+        <div class="news-content">
+            <div class="news-box">
+                <img src="images/news-img1.png">
+                <div class="news-box-text">
+                    <h5>Porem ipsum dolor sit ame</h5>
+                    <p class="light-p">Lorem Ipsum. Proin gravida nibh</p>
+                    <p>Lorem Ipsum. Proin gravida nibh velit it’s a cold world out there.This is Photoshop's version of Lorem Ipsum.</p>
+                </div>
+                <div class="news-box-buttons">
+                    <button>Read More</button>
+                    <div class="news-box-icons">
+                        <i class="fa fa-heart"></i>
+                        <p>|</p>
+                        <i class="fa fa-comment"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="news-box">
+                <img src="images/news-img2.png">
+                <div class="news-box-text">
+                    <h5>Porem ipsum dolor sit ame</h5>
+                    <p class="light-p">Lorem Ipsum. Proin gravida nibh</p>
+                    <p>Lorem Ipsum. Proin gravida nibh velit it’s a cold world out there.This is Photoshop's version of Lorem Ipsum.</p>
+                </div>
+                <div class="news-box-buttons">
+                    <button>Read More</button>
+                    <div class="news-box-icons">
+                        <i class="fa fa-heart"></i>
+                        <p>|</p>
+                        <i class="fa fa-comment"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="news-box">
+                <img src="images/news-img3.png">
+                <div class="news-box-text">
+                    <h5>Porem ipsum dolor sit ame</h5>
+                    <p class="light-p">Lorem Ipsum. Proin gravida nibh</p>
+                    <p>Lorem Ipsum. Proin gravida nibh velit it’s a cold world out there.This is Photoshop's version of Lorem Ipsum.</p>
+                </div>
+                <div class="news-box-buttons">
+                    <button>Read More</button>
+                    <div class="news-box-icons">
+                        <i class="fa fa-heart"></i>
+                        <p>|</p>
+                        <i class="fa fa-comment"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--SUMMER SALE-->
+    <div class="sale">
+        <div class="sale-content">
+            <div class="sale-grid">
+                <!--OUR BRAND LEFT-->
+                <div class="our-brands" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="3200" data-aos-duration="1000">
+                    <h4>Our Brands</h4>
+                    <div class="our-brand">
+                        <img src="images/brands-img1.png" alt="">
+                        <div class="our-brands-info">
+                            <h5>Orange T-shirt</h5>
+                            <p>Nike</p>
+                            <div class="stars">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+                            <div class="price">
+                                <p class="old-price">$74.00</p>
+                                <p class="new-price">$69.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="our-brand">
+                        <img src="images/brands-img2.png" alt="">
+                        <div class="our-brands-info">
+                            <h5>Orange T-shirt</h5>
+                            <p>Nike</p>
+                            <div class="stars">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+                            <div class="price">
+                                <p class="old-price">$74.00</p>
+                                <p class="new-price">$69.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="our-brand">
+                        <img src="images/brands-img3.png" alt="">
+                        <div class="our-brands-info">
+                            <h5>Orange T-shirt</h5>
+                            <p>Nike</p>
+                            <div class="stars">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+                            <div class="price">
+                                <p class="old-price">$74.00</p>
+                                <p class="new-price">$69.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="our-brand">
+                        <img src="images/brands-img4.png" alt="">
+                        <div class="our-brands-info">
+                            <h5>Orange T-shirt</h5>
+                            <p>Nike</p>
+                            <div class="stars">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+                            <div class="price">
+                                <p class="old-price">$74.00</p>
+                                <p class="new-price">$69.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--SALE POSTER-->
+                <div class="sale-poster" data-aos="fade-up" data-aos-anchor="#example-anchor" data-aos-offset="3200" data-aos-duration="800">
+                    <img src="images/summer-sale-poster.png">
+                </div>
+                <!--OUR BRAND RIGHT-->
+                <div class="our-brands" data-aos="fade-right" data-aos-anchor="#example-anchor" data-aos-offset="3200" data-aos-duration="1000">
+                    <h4>Our Brands</h4>
+                    <div class="our-brand">
+                        <img src="images/brands-img1.png" alt="">
+                        <div class="our-brands-info">
+                            <h5>Orange T-shirt</h5>
+                            <p>Nike</p>
+                            <div class="stars">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+                            <div class="price">
+                                <p class="old-price">$74.00</p>
+                                <p class="new-price">$69.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="our-brand">
+                        <img src="images/brands-img2.png" alt="">
+                        <div class="our-brands-info">
+                            <h5>Orange T-shirt</h5>
+                            <p>Nike</p>
+                            <div class="stars">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+                            <div class="price">
+                                <p class="old-price">$74.00</p>
+                                <p class="new-price">$69.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="our-brand">
+                        <img src="images/brands-img3.png" alt="">
+                        <div class="our-brands-info">
+                            <h5>Orange T-shirt</h5>
+                            <p>Nike</p>
+                            <div class="stars">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+                            <div class="price">
+                                <p class="old-price">$74.00</p>
+                                <p class="new-price">$69.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="our-brand">
+                        <img src="images/brands-img4.png" alt="">
+                        <div class="our-brands-info">
+                            <h5>Orange T-shirt</h5>
+                            <p>Nike</p>
+                            <div class="stars">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+                            <div class="price">
+                                <p class="old-price">$74.00</p>
+                                <p class="new-price">$69.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sale-border"></div>
+            <div class="sale-forms">
+                <div class="sale-forms-text">
+                    <h3> Never miss any fashion trending</h3>
+                    <p>Praesent mauris. Fusce nec tellus sed augue semper porta.</p>
+                </div>
+                <!--FORMS-->
+                <div class="form">
+                    <form action="">
+                        <input type="text" id="fname" name="readmore">
+                        <button type="submit">Read More</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--BRAND LOGOS-->
+    <div id="logos" class="brand-logos">
+        <img src="images/popular-logos.png" data-aos="fade-up" data-aos-anchor="#example-anchor" data-aos-offset="3900" data-aos-duration="800">
+    </div>
+
+    <!--FOOTER-->
+    <footer>
+        <div class="footer-content">
+            <div class="about-company">
+                <h4>About cmpany</h4>
+                <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh velit it’s a cold world out there.</p>
+                <div class="footer-contact">
+                    <div class="location">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <p><a href="https://www.google.com/maps/place/New+York,+NY,+USA/@40.7033351,-74.1820399,10.52z/data=!4m5!3m4!1s0x89c24fa5d33f083b:0xc80b8f06e177fe62!8m2!3d40.7127753!4d-74.0059728" target="_blank">0123 Main Road, Your City, NY 123456</a></p>
+                    </div>
+                    <div class="phone">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <p><a href="#">(000) 2345 - 6789</a></p>
+                    </div>
+                    <div class="mail">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <p><a href="#">info@psdfreebies.com</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="my-account">
+                <h4>My Account</h4>
+                <p><a href="#">My Account</a></p>
+                <p><a href="#">Contact</a></p>
+                <p><a href="#">Frequently Questions</a></p>
+                <p><a href="#">Portfolio</a></p>
+                <p><a href="#">Checkout</a></p>
+            </div>
+
+            <div class="product">
+                <h4>Product</h4>
+                <p><a href="#">About Us</a></p>
+                <p><a href="#">Blog</a></p>
+                <p><a href="#">Contact</a></p>
+                <p><a href="#">Services</a></p>
+                <p><a href="#">Portfolio</a></p>
+            </div>
+
+            <div class="us">
+                <div class="follow-us">
+                    <h4>Follow Us:</h4>
+                    <div class="follow-us-icons">
+                        <div class="google follow-icon">
+                            <i class="fa fa-google">+</i>
+                            <p><a href="https://www.google.com/account/about/" target="_blank">Google+</a></p>
+                        </div>
+                        <div class="pinterest follow-icon">
+                            <i class="fa fa-pinterest" aria-hidden="true"></i>
+                            <p><a href="https://www.pinterest.com/" target="_blank">Pinterest</a></p>
+                        </div>
+                        <div class="vimeo follow-icon">
+                            <i class="fa fa-vimeo" aria-hidden="true"></i>
+                            <p><a href="https://vimeo.com/log_in" target="_blank">Vimeo</a></p>
+                        </div>
+                        <div class="facebook follow-icon">
+                            <i class="fa fa-facebook-f"></i>
+                            <p><a href="https://www.facebook.com/" target="_blank">Facebook</a></p>
+                        </div>
+                        <div class="twitter follow-icon">
+                            <i class="fa fa-twitter"></i>
+                            <p><a href="https://mobile.twitter.com/twi?lang=en" target="_blank">Twitter</a></p>
+                        </div>
+                        <div class="rss follow-icon">
+                            <i class="fa fa-rss" aria-hidden="true"></i>
+                            <p><a href="https://rss.com/" target="_blank">RSS</a></p>
+                        </div>
+                    </div>
+
+                    <div class="payment">
+                        <h4>Payment Methods</h4>
+                        <div class="cards">
+                            <i class="fa fa-cc-mastercard"></i>
+                            <i class="fa fa-cc-discover"></i>
+                            <i class="fa fa-cc-amex"></i>
+                            <i class="fa fa-cc-visa"></i>
+                            <i class="fa fa-cc-stripe"></i>
+                            <i class="fa fa-cc-diners-club"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-nav">
+            <ul>
+                <li><a href="#">Sitemap</a></li>
+                <li><a href="#">Searchs</a></li>
+                <li><a href="#">Searchs</a></li>
+                <li><a href="#">Advance</a></li>
+                <li><a href="#">Searchs</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-rights">
+            <p>&copy; 2022 PSDFreeBies.com</p>
+            <p>|</p>
+            <p>All Rights Resived.</p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init();</script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

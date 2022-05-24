@@ -1,0 +1,32 @@
+.footer-nav{
+    margin: 86px auto 38px auto;
+    ul{
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        @include breakpoints(640px){
+            display: grid;
+            grid-template-columns: auto auto auto;
+            justify-content: space-between;
+        }
+        @include mobileM{
+            grid-template-columns: auto auto;
+        }
+    }
+    li{
+        margin: 0 20px;
+    }
+    a{
+        text-decoration: none;
+        color: $whiteColor;
+        font-size: $navSize;
+        line-height: 30px;
+        font-weight: 500;
+        transition: .3s;
+        &:hover{
+            color: $blueColor;
+        }
+    }
+}

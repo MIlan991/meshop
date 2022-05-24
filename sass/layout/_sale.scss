@@ -1,0 +1,112 @@
+.sale{
+    width: 100%;
+    height: 765px;
+    background-image: url('../images/background-gray-color.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    @include xl{
+        background-image: none;
+        height: 2185px;
+    }
+    @include mobileL{
+        overflow: hidden;
+    }
+}
+
+.sale-content{
+    height: 956px;
+    width: 100%;
+    max-width: 1171px;
+    background-color: $whiteColor;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @include xl{
+        height: 100%;
+    }
+}
+.sale-grid{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 50px 32px 30px 32px;
+    @include xl{
+        flex-direction: column;
+        align-items: center;
+    }
+    h4{
+        font-size: $h4Size;
+        font-weight: 900;
+        color: $blackColor;
+        margin-top: 14px;
+        margin-bottom: 42px;
+        text-align: center;
+    }
+}
+.our-brand{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 356px;
+    border-bottom: 1px solid $lightGray;
+    margin-top: 22px;
+    @include mobileL{
+        max-width: 90%;
+        padding-left: 30px;
+    }
+    img{
+        margin-right: 29px;
+        margin-bottom: 21px;
+    }
+    h5{
+        font-size: $h5Size;
+        color: $blackColor;
+        font-weight: 800;
+    }
+    p{
+        font-size: $pSize;
+        font-weight: 400;
+        font-style: italic;
+        color: $lightGray;
+    }
+    i{
+        color: $yellowColor;
+        margin-bottom: 10px;
+        margin-bottom: 16px;
+    }
+}
+.our-brand:last-child{
+    border-bottom: none;
+}
+.price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 129px;
+    p:nth-child(1){
+        color: $lightGray1;
+        font-weight: 500;
+        font-size: $pSize;
+        text-decoration-line: line-through;
+        font-style: normal;
+    }
+    p:nth-child(2){
+        color: $pinkColor;
+        font-weight: 800;
+        font-size: $pSize;
+        font-style: normal;
+    }
+}
+.sale-border{
+    border-bottom: 1px solid $lightGray1;
+    width: 100%;
+    max-width: 1110px;
+    margin: 0 auto;
+    @include xl{
+        width: 90%;
+    }
+}

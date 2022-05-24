@@ -1,0 +1,93 @@
+//PURCHASE BUTTON
+.purchase button{
+    border: none;
+    min-width: 33px;
+    height: 33px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+    text-align: center;
+    font-size: $pSize;
+    font-weight: 700;
+    //position: absolute;
+    right: 26px;
+    top: 18px;
+    @include breakpoints(566px){
+        margin-left: 10px;
+    }
+}
+
+//HOME BUTTON
+.home-text button,
+.shop button{
+    border: none;
+    cursor: pointer;
+    color: $whiteColor;
+    background-color: $pinkColor;
+    font-weight: 700;
+    font-size: $h4Size;
+    width: 156px;
+    height: 47px;
+    transition: .3s;
+}
+.home-text button:hover,
+.shop button:hover{
+    background-color: $grayColor;
+}
+
+//SLIDER BUTTONS
+.shop-slider-buttons button{
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    font-size: $pSize;
+    background-color: $redColor;
+    margin: 0 2px;
+    i{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.shop-slider-buttons button:hover{
+    background-color: $lightGray;
+}
+.shop-slider-buttons button:active{
+    background-color: $blackColor;
+}
+
+//NEWS BUTTONS
+.news button{
+    width: 99px;
+    height: 30px;
+    color: $whiteColor;
+    background-color: $redColor;
+    cursor: pointer;
+    border: none;
+    font-size: $navSize;
+    font-weight: 700;
+    transition: .3s;
+    &:hover{
+        background-color: $grayColor;
+    }
+}
+
+//FORMS BUTTON
+.form button{
+    width: 119px;
+    min-width: 119px;
+    height: 38px;
+    color: $whiteColor;
+    background-color: $pinkColor;
+    cursor: pointer;
+    border: none;
+    font-size: $navSize;
+    font-weight: 700;
+    transition: .3s;
+    &:hover{
+        background-color: $grayColor;
+    }
+    @include mobileM{
+        margin-top: 20px;
+    }
+}

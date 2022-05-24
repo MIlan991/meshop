@@ -1,0 +1,112 @@
+.news{
+    padding-top: 131px;
+    padding-bottom: 185px;
+    text-align: center;
+    background-image: url(../images/background-news.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include lg{
+        padding-top: 40px;
+        padding-bottom: 130px;
+    }
+}
+
+.news-title{
+    margin-bottom: 48px;
+    @include breakpoints(550px){
+        text-align: left;
+        margin-left: 20px;
+    }
+    @include mobileL{
+        margin-bottom: 22px;
+    }
+    h4{
+        font-size: $h4Size;
+        font-weight: 800;
+        color: $blackColor;
+    }
+    p{
+        font-size: $pSize;
+        font-weight: 500;
+        color: $blackColor;
+        line-height: 22px;
+        @include mobileL{
+            width: 90%;
+            max-width: 90%;
+            font-size: $navSize;
+        }
+    }
+}
+
+.news-content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 42px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1171px;
+    margin: 0 auto;
+    @include xl{
+        grid-template-columns: auto;
+    }
+}
+.news-box{
+    background-color: $whiteColor;
+    @include mobileL{
+        width: 90%;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    img{
+        width: 100%;
+    }
+}
+.news-box-text{
+    text-align: left;
+    padding: 34px 41px 25px 25px;
+    h5{
+        font-size: $h5Size;
+        font-weight: 800;
+        color: $grayColor;
+        margin-bottom: 7px;
+    }
+    p{
+        font-size: $navSize;
+        font-weight: 500;
+        color: $darkGrayColor;
+        max-width: 291px;
+    }
+    .light-p{
+        color: $lightGray1;
+        margin-bottom: 23px;
+    }
+}
+
+.news-box-buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 0px 41px 25px 25px;
+}
+
+.news-box-icons{
+    width: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    i{
+        cursor: pointer;
+        color: $redColor;
+        font-size: $navSize;
+        transition: .3s;
+        &:hover{
+            color: $grayColor;
+        }
+    }
+    p{
+        color: $lightGray;
+        font-size: $navSize;
+    }
+}

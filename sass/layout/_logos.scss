@@ -1,0 +1,15 @@
+.brand-logos{
+    background-color: #eeeeee;
+    padding: 153px 0px 56px 0px;
+    text-align: center;
+    img{
+        width: 100%;
+        max-width: 1171px;
+    }
+    @include xl{
+        padding: 53px 10px 56px 10px;
+    }
+    @include mobileL{
+        padding: 20px 10px 16px 10px;
+    }
+}

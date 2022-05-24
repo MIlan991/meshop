@@ -1,0 +1,122 @@
+.home, #home{
+    width: 100%;
+    height: 130vh;
+    background-color: $blueColor;
+    background-image: url('../images/background-home.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    top: -136px;
+    margin-bottom: -136px;
+    @include breakpoints(1300px){
+        height: 100vh;
+    }
+    .home-text{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        top: 36%;
+        left: 12%;
+        width: 70%;
+        @include breakpointsMin(1500px){
+            left: -40px;
+        }
+        @include breakpoints(1500px){
+            left: -40px;
+        }
+        @include breakpoints(1425px){
+            width: 60%;
+        }
+        @include breakpoints(1330px){
+            width: 50%;
+        }
+        @include breakpoints(1300px){
+            top: 55%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        @include tablet{
+            width: 100%;
+        }
+        h1{
+            font-size: $titleFontSize;
+            color: $blackColor;
+            font-weight: 800;
+            width: 730px;
+            text-align: center;
+            line-height: 80px;
+            letter-spacing: -10px;
+            @include tablet{
+                font-size: 90px;
+                line-height: 64px;
+                width: 100%;
+            }
+            @include breakpoints(550px){
+                font-size: 82px;
+                line-height: 58px;
+            }
+            @include mobileL{
+                font-size: 62px;
+                line-height: 44px;
+                letter-spacing: -6px;
+            }
+        }
+        h1 span{
+            color: $pinkColor;
+        }
+        .home-year{
+            text-align: center;
+            width: 454px;
+            @include tablet{
+                width: 394px;
+            }
+            @include breakpoints(550px){
+                width: 234px;
+            }
+        }
+        h4{
+            font-size: $h1Size;
+            font-weight: 700;
+            letter-spacing: 80px;
+            text-align: center;
+            margin: -6px 0px 20px 0px;
+            @include tablet{
+                font-size: $h3Size;
+                margin: 0 auto 20px auto;
+                text-align: center;
+            }
+            @include breakpoints(550px){
+                font-size: 22px;
+                letter-spacing: 60px;
+                margin-bottom: 10px;
+            }
+        }
+        p{
+            text-align: center;
+            font-size: $pSize;
+            font-weight: 400;
+            line-height: 24px;
+            color: $grayColor;
+            width: 566px;
+            margin-bottom: 70px;
+            @include tablet{
+                width: 90%;
+            }
+        }
+    }
+    img{
+        position: absolute;
+        height: calc(130vh - 136px);
+        width: 100%;
+        max-width: 60%;
+        bottom: 0%;
+        right: 0%;
+        @include breakpoints(1300px){
+            display: none;
+        }
+    }
+}

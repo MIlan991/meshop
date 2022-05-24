@@ -1,0 +1,54 @@
+.sale-forms{
+    text-align: center;
+    margin: 0 20px;
+    @include breakpoints(550px){
+        text-align: left;
+    }
+    h3{
+        color: $blackColor;
+        font-weight: 800;
+        font-size: $h3Size;
+        margin-bottom: 14px;
+        margin-top: 78px;
+        @include breakpoints(550px){
+            font-size: $h4Size;
+            margin-top: 38px;
+        }
+    }
+    p{
+        color: $pSize;
+        font-weight: 500;
+        font-size: $pSize;
+        margin-bottom: 39px;
+        @include breakpoints(550px){
+            font-size: $navSize;
+        }
+    }
+    form{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        @include mobileM{
+            flex-direction: column;
+            align-items: flex-end;
+        }
+    }
+    input{
+        height: 38px;
+        max-width: 526px;
+        width: 100%;
+        border: 1px solid $lightGray;
+        outline: none;
+        margin-right: 10px;
+        padding: 0 10px;
+        transition: .3s;
+        @include mobileM{
+            margin-right: 0px;
+        }
+        &:focus{
+            background-color: #eeeeee;
+            border: 1px solid $pinkColor;
+        }
+    }
+}

@@ -1,0 +1,306 @@
+.shop{
+    background-image: url('../images/background-gray-color.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 1105px;
+    position: relative;
+    @include lg{
+        height: 1550px;
+    }
+    @include breakpoints(700px){
+        height: 1500px;
+    }
+    @include breakpoints(550px){
+        height: 1450px;
+    }
+    @include breakpoints(520px){
+        height: 1420px;
+    }
+    @include breakpoints(333px){
+        height: 1450px;
+    }
+}
+
+.shop-content{
+    height: 1220px;
+    width: 100%;
+    max-width: 1171px;
+    background-color: $whiteColor;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @include lg{
+        height: 1550px;
+    }
+    @include breakpoints(700px){
+        height: 1500px;
+    }
+    @include breakpoints(550px){
+        height: 1450px;
+    }
+    @include breakpoints(520px){
+        height: 1420px;
+    }
+    @include breakpoints(333px){
+        height: 1450px;
+    }
+}
+.plane{
+    height: 126px;
+    width: 126px;
+    background-color: $whiteColor;
+    border-radius: 50%;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $grayColor;
+    position: absolute;
+    left: 18%;
+    top: -63px;
+    transform: translate(-50%);
+    @include tablet{
+        height: 86px;
+        width: 86px;
+        top: -43px;
+    }
+}
+.support{
+    height: 126px;
+    width: 126px;
+    background-color: $whiteColor;
+    border-radius: 50%;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $grayColor;
+    position: absolute;
+    left: 50%;
+    top: -63px;
+    transform: translate(-50%);
+    @include tablet{
+        height: 86px;
+        width: 86px;
+        top: -43px;
+    }
+}
+.clock{
+    height: 126px;
+    width: 126px;
+    background-color: $whiteColor;
+    border-radius: 50%;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $grayColor;
+    position: absolute;
+    left: 82%;
+    top: -63px;
+    transform: translate(-50%);
+    @include tablet{
+        height: 86px;
+        width: 86px;
+        top: -43px;
+    }
+}
+
+.shop-title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 60px;
+    text-align: center;
+    margin-bottom: 108px;
+    @include breakpoints(700px){
+        margin-bottom: 54px;
+    }
+    @include breakpoints(700px){
+        padding-top: 40px;
+        margin-bottom: 44px;
+    }
+    h1{
+        font-size: 30px;
+        color: $blackColor;
+        font-weight: 800;
+        margin-bottom: 10px;
+        width: 230px;
+        @include tablet{
+            font-size: $h4Size;
+        }
+        @include breakpoints(640px){
+            width: 150px;
+        }
+        @include breakpoints(500px){
+            font-size: $pSize;
+            width: 120px;
+        }
+        @include mobileL{
+            font-size: $navSize;
+            width: 106px;
+        }
+        @include mobileS{
+            font-size: 12px;
+        }
+    }
+    p{
+        font-size: $pSize;
+        color: $blackColor;
+        font-weight: 400;
+        @include breakpoints(700px){
+            display: none;
+        }
+    }
+}
+.shipping{
+    position: absolute;
+    left: 18%;
+    top: 50px;
+    z-index: 10;
+    transform: translate(-50%);
+}
+.refund{
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    z-index: 10;
+    transform: translate(-50%);
+}
+.support-title{
+    position: absolute;
+    left: 82%;
+    top: 50px;
+    z-index: 10;
+    transform: translate(-50%);
+}
+
+.shop-now{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 39px;
+    padding-left: 20px;
+    margin-bottom: 109px;
+    @include lg{
+        grid-template-columns: repeat(1, 1fr);
+        padding-left: 0px;
+    }
+    @include breakpoints(550px){
+        margin-bottom: 62px;
+    }
+    @include breakpoints(520px){
+        grid-gap: 0px;
+    }
+    h2{
+        font-size: $h2Size;
+        font-weight: 800;
+        letter-spacing: -4px;
+        line-height: 39px;
+        color: $blackColor;
+        margin-bottom: 18px;
+        width: 182px;
+    }
+    span{
+        color: $pinkColor;
+    }
+    p{
+        color: $grayColor;
+        font-size: $pSize;
+        line-height: 22px;
+        text-align: left;
+        font-weight: 500;
+        margin-bottom: 32px;
+        width: 232px;
+    }
+    img{
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+}
+
+.shop-left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $blueColor;
+    width: 100%;
+    max-width: 536px;
+    height: 292px;
+    position: relative;
+    @include lg{
+        margin: 0 auto;
+    }
+    @include breakpoints(520px){
+        background-color: $lighPinkColor;
+    }
+}
+.shop-left-text{
+    position: absolute;
+    z-index: 1;
+    left: 50px;
+}
+.shop-left-img{
+    position: absolute;
+    right: 0px;
+    @include breakpoints(520px){
+        display: none;
+    }
+}
+.shop-right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $blueColor;
+    width: 100%;
+    max-width: 536px;
+    height: 292px;
+    position: relative;
+    @include lg{
+        margin: 0 auto;
+    }
+    @include breakpoints(520px){
+        background-color: $lightColor2;
+    }
+}
+.shop-right-text{
+    position: absolute;
+    z-index: 1;
+    left: 50px;
+}
+.shop-right-img{
+    position: absolute;
+    right: 0px;
+    @include breakpoints(520px){
+        display: none;
+    }
+}
+
+.featured-products{
+    text-align: center;
+    h3{
+        color: $blackColor;
+        font-size: $h3Size;
+        font-weight: 900;
+        margin-bottom: 16px;
+    }
+    p{
+        color: $blackColor;
+        font-size: $pSize;
+        font-weight: 500;
+        @include breakpoints(550px){
+            font-size: $navSize;
+        }
+    }
+}
+.featured-produts-title{
+    margin-bottom: 22px;
+    @include breakpoints(550px){
+        text-align: left;
+        padding-left: 20px;
+        margin-bottom: 42px;
+    }
+}

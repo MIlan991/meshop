@@ -1,0 +1,149 @@
+footer{
+    background-image: url(../images/background-footer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1171px;
+    margin: 0 auto;
+    @include lg{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 80px;
+        align-items: center;
+        justify-content: space-evenly;
+        overflow: hidden;
+    }
+    @include breakpoints(708px){
+        justify-content: start;
+        gap: 30px;
+    }
+    @include breakpoints(660px){
+        justify-content: space-evenly;
+    }
+}
+
+.about-company {
+    @include breakpoints(660px){
+        grid-column: 1 / span 4;
+    }
+  }
+  .my-account {
+    @include breakpoints(660px){
+        grid-column: 1 / span 2;
+    }
+  }
+  .product {
+    @include breakpoints(660px){
+        grid-column: 3 / span 2;
+    }
+  }
+  .us {
+    @include breakpoints(660px){
+        grid-column: 1 / span 4;
+    }
+  }
+.about-company,
+.my-account,
+.product,
+.us{
+    padding-top: 81px;
+    @include breakpoints(660px){
+        padding-top: 30px;
+    }
+    h4{
+        font-size: $h4Size;
+        color: $whiteColor;
+        font-size: 800;
+        margin-bottom: 32px;
+    }
+    p{
+        color: $whiteColor;
+        font-weight: 300;
+        line-height: 28px;
+        text-align: left;
+        font-size: $pSize;
+        max-width: 266px;
+        margin-bottom: 22px;
+    }
+    a{
+        text-decoration: none;
+        color: $whiteColor;
+        transition: .3s;
+        &:hover{
+            color: $blueColor;
+        }
+    }
+    i{
+        color: $whiteColor;
+        margin-right: 12px;
+    }
+    .location,
+    .phone,
+    .mail{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-bottom: 12px;
+    }
+}
+
+.footer-contact{
+    margin-top: 42px;
+    p{
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 0px;
+    }
+}
+
+.follow-us-icons{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 64px;
+    grid-row-gap: 10px;
+}
+.follow-icon{
+    display: flex;
+    i{
+        font-size: $h3Size;
+    }
+}
+
+.payment{
+    margin-top: 16px;
+    i{
+        opacity: .6;
+        font-size: $h3Size;
+        @include mobileS{
+        font-size: $h4Size;
+        }
+    }
+}
+
+.footer-rights{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-bottom: 88px;
+    width: 100%;
+    max-width: 344px;
+    p{
+        color: $whiteColor;
+        font-size: $navSize;
+        font-weight: 500;
+        @include mobileM{
+            font-size: 12px;
+        }
+    }
+}
